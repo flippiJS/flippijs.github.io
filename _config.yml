@@ -22,12 +22,10 @@ title: flippi
 email: me@flippi.dev
 description: >- # this means to ignore newlines until "baseurl:"
   dev & tech enthusiast
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
 # Build settings
 theme: plainwhite
 remote_theme: samarsault/plainwhite-jekyll
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -59,8 +57,10 @@ plainwhite:
     <section style="text-align: center; display: block">Tech enthusiast.</section>
   date_format: "%b %-d, %Y"
   portfolio_image:  "assets/profile.png" # the path from the base directory of the site to the image to display (no / at the start)
-  dark_mode: true
-  search: true
+  search: true # set to true to enable searchbar
+  dark_mode: true # set to true to add dark mode toggle
+  sitemap: true # set to true to generate sitemap.xml content
+  html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
 
   social_links:
     twitter: flippiJS
