@@ -53,7 +53,7 @@ plainwhite:
   name: Franco Lippi
   tagline: |
     <section style="text-align: center; display: block"><code>@flippi</code></section>
-    <section style="text-align: center; display: block">Software Engineer.</section>
+    <section style="text-align: center; display: block">Software dev.</section>
     <section style="text-align: center; display: block">Tech enthusiast.</section>
   date_format: "%b %-d, %Y"
   portfolio_image:  "assets/profile.png" # the path from the base directory of the site to the image to display (no / at the start)
