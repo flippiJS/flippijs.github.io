@@ -4,58 +4,57 @@ title:  "Slim Framework App PHP with deploy in Heroku"
 date:   2021-03-07 20:07:28 -0300
 categories: tutorial
 ---
-Aplicación Slim Framework PHP con despliegue automático en Heroku.
+Slim Framework PHP application with automatic deployment on Heroku.
 ==============================
 
-## Introducción
-El principal objetivo de este repo es poder desplegar de forma automática nuestra aplicación PHP Slim Framework en Heroku.
+## Introduction
+The main objective of this repo is to be able to automatically deploy our PHP Slim Framework application on Heroku.
 
-## 1- Forkear proyecto
-Como primer paso, forkeamos este proyecto desde el boton ubicado en la parte superior derecha de la pagina del repositorio.
+## 1- Forke project
+As a first step, we forked this project from the button located at the top right of the repository page.
 
-## 2- Subimos nuestro codigo
-Una vez forkeado, clonamos el repo con `git clone <url del repo>` y agregamos nuestro codigo PHP (SLIM Framework) dentro de la carpeta `/app/`.
-Luego comiteamos y pusheamos los cambios.
+## 2- We upload our code
+Once forked, we clone the repo with `git clone <repo url>` and add our PHP code (SLIM Framework) inside the `/app/` folder.
+Then we commit and push the changes.
 
-```sh
-git add .
+`` `sh
+git add.
 git commit -m "first commit"
 git push -u origin main
-```
+`` ''
 
-## 3- Crear y configurar la App en Heroku
+## 3- Create and configure the App in Heroku
 
-Nos dirigimos a la página de Heroku https://heroku.com/, iniciamos sesión si tenemos cuenta o creamos una.
+We go to the Heroku page https://heroku.com/, we log in if we have an account or create one.
 
-Heroku al iniciar sesión nos muestra su dashboard, aquí haremos clic en **New** y luego en **Create new app**:
+When you log in, Heroku shows us your dashboard, here we will click on ** New ** and then on ** Create new app **:
 
-![Heroku1](https://i.ibb.co/MVTSH69/heroku1.png)
+! [Heroku1] (https://i.ibb.co/MVTSH69/heroku1.png)
 
-En esta sección agregamos el nombre de la app, seleccionamos la región United States y luego clic en botón **Create app**
+In this section we add the name of the app, select the United States region and then click the ** Create app ** button
 
-![Heroku2](https://i.ibb.co/TwPJnrW/heroku2.png)
+! [Heroku2] (https://i.ibb.co/TwPJnrW/heroku2.png)
 
-Ahora vamos a la sección **Deploy** y hacemos clic en la opción de GitHub, la cual nos mostrará nuestro usuario o tendremos que iniciar sesión con GitHub. Después   buscamos el nombre de nuestro repo y aparecerá abajo:
+Now we go to the ** Deploy ** section and click on the GitHub option, which will show us our user or we will have to log in with GitHub. Then we look for the name of our repo and it will appear below:
 
-![Heroku3](https://i.ibb.co/vZjZgD6/heroku3.png)
+! [Heroku3] (https://i.ibb.co/vZjZgD6/heroku3.png)
 
-Seleccionamos el repo y hacemos clic en **Connect**
+We select the repo and click on ** Connect **
 
-Una vez hecho esto, elegimos la rama de github que queremos deplegar con nuestra aplicación Heroku, en nuestro caso `main`, y hacemos clic en **Enable Automatic Deploys**. De esta forma, cada vez que se haga una modificación a esta rama, Heroku va actualizar automáticamente la aplicación.
+Once this is done, we choose the github branch that we want to deploy with our Heroku application, in our case `main`, and click ** Enable Automatic Deploys **. In this way, every time a modification is made to this branch, Heroku will automatically update the application.
 
-![Heroku4](https://i.ibb.co/d0z1NWv/heroku4.png)
+! [Heroku4] (https://i.ibb.co/d0z1NWv/heroku4.png)
 
-Lo utlimo que deberiamos hacer es clic en el botón **Deploy Branch**. Esto solo se hace una sola vez, luego se hará de forma automática.
+The last thing we should do is click the ** Deploy Branch ** button. This is only done once, then it will be done automatically.
 
-![Heroku5](https://i.ibb.co/sVYwVZx/heroku5.png)
+! [Heroku5] (https://i.ibb.co/sVYwVZx/heroku5.png)
 
-Podemos verificar desde GitHub si el depliegue se hizo con exito.
+We can check from GitHub if the deployment was done successfully.
 
-![Heroku6](https://i.ibb.co/K95j3fp/heroku6.png)
+! [Heroku6] (https://i.ibb.co/K95j3fp/heroku6.png)
 
-Desde el botón **View deployment** accedemos a la URL de la app desplegada.
+From the button ** View deployment ** we access the URL of the deployed app.
 
 https://slim-php-heroku.herokuapp.com/
 
-
-### 2021 - UTN FRA
+### 2021
