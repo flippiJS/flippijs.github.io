@@ -52,9 +52,9 @@ plainwhite:
   name: Franco Lippi
   tagline: |
     <section style="text-align: center; display: block"><code>@flippi</code></section>
-    <section style="text-align: center; display: block">👾 Dev. 🎮 Casual gamer.</section>
-    <section style="text-align: center; display: block">💻 Tech enthusiast.</section>
-    <section style="text-align: center; display: block">🎮 Casual gamer.</section>
+    <section style="text-align: center; display: block">👾 Dev</section>
+    <section style="text-align: center; display: block">💻 Tech enthusiast</section>
+    <section style="text-align: center; display: block">🎮 Casual gamer</section>
   date_format: "%b %-d, %Y"
   portfolio_image:  "assets/profile.png" # the path from the base directory of the site to the image to display (no / at the start)
   search: true # set to true to enable searchbar
