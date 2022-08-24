@@ -23,7 +23,6 @@ email: franco@lippi.ar
 description: >- # this means to ignore newlines until "baseurl:"
   👾 Dev. 💻 Tech enthusiast. 🎮 Casual gamer. 🚀 The life is that time while you deploy to production.
 # Build settings
-theme: plainwhite
 remote_theme: samarsault/plainwhite-jekyll
 
 plugins:
