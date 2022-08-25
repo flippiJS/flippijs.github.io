@@ -114,4 +114,57 @@ From the panel of this site we will be able to manage the different databases, c
 
 ```sh
 php -r "copy('//getcomposer.org/installer', 'composer-setup.php');"
-php -r "if (hash_file('SHA384', 'composer-setup.php') === 'e115a8dc7871f15d853148a7fbac7da27d6c0030b848d9b3dc09e2a0388afed865e6a3d6b3c0fad45c48e2b5fc1196ae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup. php'); } echo
+php -r "if (hash_file('SHA384', 'composer-setup.php') === 'e115a8dc7871f15d853148a7fbac7da27d6c0030b848d9b3dc09e2a0388afed865e6a3d6b3c0fad45c48e2b5fc1196ae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup. php'); } echo PHP_EOL;"
+php composer-setup.php
+```
+
+## Run locally via XAMPP
+
+- Copy project inside htdocs folder
+
+```sh
+C:\xampp\htdocs\
+```
+- Access the project folder by command line and then install Slim framework via Compose
+
+```sh
+cd C:\xampp\htdocs\<path-to-cloned-repo>
+composer update
+```
+- In the index.php file add the following line below `AppFactory::create();`
+
+```sh
+// Set base path
+$app->setBasePath('/app');
+```
+- Open from http://localhost/app or http://localhost:8080/app (depends on the port configured in the XAMPP panel)
+
+## Run locally via PHP
+
+- Access the project folder by command line and then install Slim framework via Compose
+
+```sh
+cd C:\<path-to-cloned-repo>
+composer update
+php -S localhost:666 -t app
+```
+
+- Open from http://localhost:666/
+
+## .env file locally
+
+Create inside the `/app/` folder the `.env` file taking reference to `.env.example`
+
+We add the following data Key -> Value:
+
+```sh
+MYSQL_HOST=remotemysql.com ("Server" field of the data we saved when creating the database in remotemysql.com)
+MYSQL_PORT=3306 ("Port" field of the data we saved when creating the database in remotemysql.com)
+MYSQL_USER=elcNx8VTCx ("Username" field of the data we saved when creating the database in remotemysql.com)
+MYSQL_PASS=1234 ("Password" field of the data we saved when creating the database in remotemysql.com)
+MYSQL_DB=elcNx8VTCx ("Database Name" field of the data we saved when creating the database in remotemysql.com)
+```
+
+Enjoy!
+
+### 2021
